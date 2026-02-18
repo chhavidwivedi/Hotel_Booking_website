@@ -6,6 +6,7 @@ import ExclusiveOffers from "../components/ExclusiveOffers";
 import Testimonial from "../components/Testimonial";
 import NewsLetter from "../components/NewsLetter";
 
+
 const Safe = ({ children, name }) => {
   // simple safety wrapper so a broken child doesn't unmount the whole page
   try {
