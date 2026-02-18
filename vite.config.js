@@ -1,18 +1,17 @@
 // vite.config.js
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react()],
   server: {
-    port: 5173,         // optional: lock dev port
-    open: true          // optional: auto-open browser
+    port: 5173,
+    open: true
   },
   resolve: {
     alias: {
-      "@": "/src"        // optional: path alias for cleaner imports
+      "@": "/src"
     }
   }
 });

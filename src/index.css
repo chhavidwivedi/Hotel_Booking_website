@@ -1,16 +1,8 @@
-/* src/index.css */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:wght@300..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* small helpers */
 * { font-family: 'Outfit', sans-serif; }
 .font-playfair { font-family: 'Playfair', serif !important; }
-
-/* optional small theme tweaks */
-:root {
-  --brand-dark: #0b0b0b;
-  --muted: #6b7280;
-}

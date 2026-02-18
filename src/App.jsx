@@ -1,4 +1,7 @@
 // src/App.jsx
+import About from "./pages/About";
+import Experience from "./pages/Experience";
+
 import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
@@ -31,6 +34,9 @@ const App = () => {
 
       <main className="flex-grow min-h-[70vh]">
         <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
+
           <Route path="/" element={<Home />} />
           <Route path="/rooms" element={<AllRooms />} />
           <Route path="/rooms/:id" element={<RoomDetails />} />
